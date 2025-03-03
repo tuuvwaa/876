@@ -86,7 +86,7 @@ toggleButton.MouseButton1Click:Connect(function()
 end)
 
 -- Tạo các tab
-local DiscodeTab = Window:AddTab({ Title = "Discode", Icon = "" })
+local ĐítCodeTab = Window:AddTab({ Title = "Discode", Icon = "" })
 local MainTab = Window:AddTab({ Title = "Script Mới Nhất", Icon = "" })
 local PlayerTab = Window:AddTab({ Title = "Script Auto Bounty", Icon = "" })
 local IslandTab = Window:AddTab({ Title = "Script Fix Lag Vip", Icon = "" })
@@ -225,8 +225,7 @@ MainTab:AddButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhDzaiScript/ScriptAnhTuanIOS/refs/heads/main/ScriptTuanAnhIOS.lua"))()
     end
 })
-local DiscodeTab = Window:AddTab({ Title = "Discode", Icon = "" })
-DiscodeTab:AddButton({
+ĐítCodeTab:AddButton({
     Title = "discord.gg/MkpDxJVTyb",
     Description = "Nhấn để copy link Discord",
     Callback = function()
