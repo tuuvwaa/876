@@ -86,7 +86,6 @@ toggleButton.MouseButton1Click:Connect(function()
 end)
 
 -- Tạo các tab
-local DiscodeTab = Window:AddTab({ Title = "Discode", Icon = "" })
 local MainTab = Window:AddTab({ Title = "Script Mới Nhất", Icon = "" })
 local PlayerTab = Window:AddTab({ Title = "Script Auto Bounty", Icon = "" })
 local IslandTab = Window:AddTab({ Title = "Script Fix Lag Vip", Icon = "" })
@@ -94,7 +93,6 @@ local OtherTab = Window:AddTab({ Title = "Script Auto Mirage", Icon = "" })
 local FruitTab = Window:AddTab({ Title = "Script Nhặt Trái", Icon = "" }) -- Tab Fruit mới
 local KaitanTab = Window:AddTab({ Title = "Script Kaitan", Icon = "" })
 local PremiumTab = Window:AddTab({ Title = "Script Maru/Banana", Icon = "" })
-local SpeedTab = Window:AddTab({ Title = "Script Chạy Nhanh", Icon = "" })
 
 _G.Random_Auto = false -- Auto Random Fruit
 local selectedPlayer = nil -- Biến lưu player được chọn cho Spectate và Tween Player
@@ -225,8 +223,7 @@ MainTab:AddButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhDzaiScript/ScriptAnhTuanIOS/refs/heads/main/ScriptTuanAnhIOS.lua"))()
     end
 })
-local DiscodeTab = Window:AddTab({ Title = "Discode", Icon = "" })
-DiscodeTab:AddButton({
+MainTab:AddButton({
     Title = "discord.gg/MkpDxJVTyb",
     Description = "Nhấn để copy link Discord",
     Callback = function()
