@@ -86,7 +86,7 @@ toggleButton.MouseButton1Click:Connect(function()
 end)
 
 -- Tạo các tab
-local ĐítCodeTab = Window:AddTab({ Title = "Discode", Icon = "" })
+local ĐítCodeTab = Window:AddTab({ Title = "ĐítCode", Icon = "" })
 local MainTab = Window:AddTab({ Title = "Script Mới Nhất", Icon = "" })
 local PlayerTab = Window:AddTab({ Title = "Script Auto Bounty", Icon = "" })
 local IslandTab = Window:AddTab({ Title = "Script Fix Lag Vip", Icon = "" })
@@ -227,7 +227,7 @@ MainTab:AddButton({
 })
 ĐítCodeTab:AddButton({
     Title = "discord.gg/MkpDxJVTyb",
-    Description = "Nhấn để copy link Discord",
+    Description = "Nhấn để copy link ĐítCode",
     Callback = function()
         setclipboard("https://discord.gg/MkpDxJVTyb")
         game:GetService("StarterGui"):SetCore("SendNotification", {
